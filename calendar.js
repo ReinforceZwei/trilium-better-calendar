@@ -150,6 +150,10 @@ function calendarInjectStyle() {
         cursor: pointer;
     }
     
+    .cal-table caption {
+        caption-side: top;
+    }
+    
     .cal-table td {
         padding: 0.4rem 0;
         margin: 0;
@@ -184,3 +188,5 @@ function calendarInjectStyle() {
     `
     $('head').append(style)
 }
+
+module.exports = calendar
