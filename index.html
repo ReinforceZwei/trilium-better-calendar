@@ -1,0 +1,35 @@
+<style>
+    .rf-card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .rf-card {
+        border-radius: 10px;
+        background-color: var(--accented-background-color);
+        padding: 10px 15px 15px 8px;
+        margin: 5px 5px 5px 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: 300px;
+        border: 1px solid transparent;
+    }
+    .rf-card:hover {
+        cursor: pointer;
+        border: 1px solid var(--main-border-color);
+        background: var(--more-accented-background-color);
+    }
+    .rf-card-title {
+        
+    }
+    .rf-card-content {
+        margin-bottom: 1em;
+    }
+</style>
+<div style="padding:10px;">
+    <div id="rf-calendar"></div>
+    <h2 id="title"></h2>
+    <div id="content" class="rf-card-container"></div>
+</div>
